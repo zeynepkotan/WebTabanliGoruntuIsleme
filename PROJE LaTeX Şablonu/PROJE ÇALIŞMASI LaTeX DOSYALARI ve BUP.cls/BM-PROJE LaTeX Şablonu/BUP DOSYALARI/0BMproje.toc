@@ -1,0 +1,31 @@
+\select@language {turkish}
+\contentsline {section}{\"OZET}{ii}{Doc-Start}
+\contentsline {section}{ABSTRACT}{iii}{Doc-Start}
+\contentsline {section}{TE\c SEKK\"UR}{iv}{Doc-Start}
+\contentsline {section}{\c SEK\.IL L\.ISTES\.I}{vi}{section*.1}
+\contentsline {section}{\numberline {1}G\.IR\.I\c S}{1}{section.1}
+\contentsline {section}{\numberline {2}MATERYAL VE METODLAR}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}MATLAB}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}VISUAL STUDIO}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}POSTMAN}{4}{subsection.2.3}
+\contentsline {section}{\numberline {3}ASP.NET WEB API NED\.IR?}{6}{section.3}
+\contentsline {section}{\numberline {4}G\"OR\"UNT\"U \.I\c SLEME NED\.IR?}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}\c CALI\c SMA MANTI\u GI NED\.IR?}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}G\"OR\"UNT\"U \.I\c SLEMEN\.IN AMACI NED\.IR?}{9}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}G\"OR\"UNT\"U \.I\c SLEME T\"URLER\.I}{9}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}G\"OR\"UNT\"U \.I\c SLEME TEKNOLOJ\.IS\.IN\.IN KULLANILDI\u GI ALANLAR}{10}{subsection.4.4}
+\contentsline {section}{\numberline {5}WEB API \.ILE G\"OR\"UNT\"U \.I\c SLEME UYGULAMASI}{11}{section.5}
+\contentsline {subsection}{\numberline {5.1}Y\"UZ TANIMA NED\.IR?}{11}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}MATLAB'DA DLL OLU\c STURMA}{12}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}VISUAL STUDIO'DA FILE UPLOAD}{14}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}VISUAL STUDIO'DA MATLAB FONKS\.IYONLARINI \c CALI\c STIRMA}{15}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}POSTMAN'DE WEB API TEST\.I}{16}{subsection.5.5}
+\contentsline {section}{\numberline {6}SONU\c CLAR VE \"ONER\.ILER}{17}{section.6}
+\contentsline {section}{\numberline {7}EKLER}{18}{section.7}
+\contentsline {subsection}{\numberline {7.1}MATLAB KODLARI}{18}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}VISUAL STUDIO KODLARI}{19}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}HomeController.cs}{19}{subsubsection.7.2.1}
+\contentsline {subsubsection}{\numberline {7.2.2}Index.cshtml}{21}{subsubsection.7.2.2}
+\contentsline {subsubsection}{\numberline {7.2.3}DefaultController.cs}{23}{subsubsection.7.2.3}
+\contentsline {section}{KAYNAKLAR}{26}{lstnumber.-3.48}
+\contentsline {section}{\"OZGE\c CM\.I\c S}{27}{section*.2}

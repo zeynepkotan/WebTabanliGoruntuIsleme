@@ -1,0 +1,112 @@
+\section{EKLER}
+
+\subsection{MATLAB KODLARI}
+\qquad 
+
+ Matlab'da bir resimdeki kiþi sayýsýný bulabilmek için  ilk olarak Casced nesne dedöktörü ile yüzler bulundu. Daha sonra  bulunan yüzler TestDatabase adlý klasöre kydedilir. For döngüsü içerine sayaç konularak kaydedilen resim sayýsý bulunur. Bu da resimdeki kiþi sayýsýný verir.
+
+\lstinputlisting[]{cucu.m}
+\subsection{VISUAL STUDIO KODLARI}
+\qquad Visual Studio için ilk olarak dosyadan resim belirlemek gerekir. Öncelikle projede HomeController içine Index adýnda bir action oluþturulur. Index'e sað týklayýp View oluþturularak projenin dosya yükleme iþlemi gerçekleþtirilir. Bu iþlem için metodunu post, enctype'ý multipart/form-data olarak tanýmlanýr.
+
+\qquad Div oluþturduktan sonra içerisine bir adet input > file ve bir adet button > submit kontrolleri yerleþtirilir. Ýnput > file kontrolünün name özelliði Image olarak ayarlandý. Bu taným controller içerisinde kullanýlýr.
+
+\subsubsection{HomeController.cs}
+\lstinputlisting[]{HomeController.cs}\subsubsection{Index.cshtml}
+ @ \{
+ 
+    ViewBag.Title = "Index";
+    
+    string dosyayolu = TempData["dosyayolu"] as string;
+    
+\}
+    <style>
+ 
+      body \{
+      
+            background-color:skyblue;
+            
+            background-repeat: no-repeat;
+            
+            background-attachment: fixed;
+
+            font-family: Verdana, monospace, sans-serif;
+            
+            font-size: 12px;
+            
+            font-weight: bold;
+            
+            text-align: justify;
+            
+            min-height: 800px;
+            
+        \}
+     div.arkaresim \{
+     
+          width: 600px;
+          
+          height: 300px;
+          
+          padding: 20px;
+          
+          background-color: skyblue;
+          
+          position: relative;
+          
+          margin: auto;
+          
+    \}
+
+    </style>
+   
+@using (Html.BeginForm("Index", "Home", FormMethod.Post, 
+
+new \{ enctype = "multipart/form-data" \}))
+
+\{
+    <div class="arkaresim">
+        
+        <div class="row" style="margin-top:50px;">
+        
+            <div class="col-md-6">
+               
+                    <div class="form-group">
+                    
+<label for="Image">Resim Seçiniz:</label>
+
+<input type="file" class="form-control" name="Imagee" id="fileUpload" />
+
+                    </div>
+                    
+                    <div class="form-group">
+                    
+                        <button type="submit" class="btn btn-primary ">
+                        
+						<i class="glyphicon glyphicon-upload"></i>
+						
+						 Yükle</button>
+						 
+                    </div>
+
+                    <label>Kiþi Sayýsý:</label>
+                    
+                    <input type="text" class="form-control" 
+                    
+                    disabled value="@ViewData["kisisayisi"]" />
+                    
+</div>          
+<div class="result">
+            
+<img src="~/Image/@dosyayolu" width="200" height="180" alt="image" />
+
+            </div>
+            
+        </div>
+        
+    </div>
+    
+\}
+
+
+\subsubsection{DefaultController.cs}
+\lstinputlisting[]{DefaultController.cs}

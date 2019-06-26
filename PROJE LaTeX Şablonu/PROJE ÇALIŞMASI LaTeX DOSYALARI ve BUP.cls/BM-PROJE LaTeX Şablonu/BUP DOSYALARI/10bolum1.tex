@@ -1,0 +1,229 @@
+\section{MATERYAL VE METODLAR}
+\qquad Bu bölümde kullanýlan materyal ve metodlardan bahsedilecektir. Projede kullanýlan materyaller:
+\begin{itemize}
+\item MATLAB
+\item VISUAL STUDIO
+\item POSTMAN
+\end{itemize}
+
+\qquad Seçilen materyallerin neden seçildigi hakkýnda kýsaca bilgilendireyim. Matlab  Görüntü Ýþleme alanýnda uygulama geliþtirmek için gereklidir. Visual Studio ise File upload iþlemini yaparak Matlab da oluþturduðumuz dll'e resmi göndererek sonucu yazdýrma iþlemini yapýyor. Postman ise Visual Studio'da yazýlan Api'yi test etmek, paylaþmak, dokümante ve monitör elde etmek için kullanýlan arayüzdür.
+\subsection{MATLAB}
+
+\qquad MATLAB, genellikle pozitif bilim ve mühendislik hesaplamalarý için kullanýlan bir bilgisayar programýdýr. Amerika Birleþik Devletleri merkezli MathWorks firmasý tarafýndan geliþtirilen MATLAB, ayný zamanda bir programlama dilidir. Ýngilizce "Matrix Laboratory" kelimelerinin birleþtirilmesi ile oluþmuþ olan MATLAB, isminden de anlaþýlacaðý gibi matris tabanlý bir çalýþma sistemine sahiptir.
+Lineer cebir, istatistik, optimizasyon, nümerik analiz, optimizasyon, fourier analizi gibi pek çok matematiksel hesaplamanýn etkili ve hýzlý þekilde yapýlmasýna olanak saðlayan MATLAB programý ayný zamanda 2D ve 3D grafik çizimi için de kullanýlýr.
+
+\qquad MATLAB ile kullanýcýlar kendi programlarýný hazýrlayabilirler. Matrisler ve onlarýn etkileþim içinde olduðu fonksiyonlarla programlama yapýlmasýna izin veren MATLAB ile çok karmaþýk matematik hesaplamalarý bile birkaç saniye içinde tamamlanýr. Temel programlama fonksiyonlarý ile benzer fonksiyonlarýn kullanýlabildiði MATLAB ile etkili ve pratik programlar hazýrlanabilir.
+
+\qquad C, Java gibi programlama dillerindeki dizilerin kullanýmý ile ayný mantýkla matrislerin kullanýldýðý MATLAB programýnda bir, iki veya daha fazla boyutta matrisler ile çalýþmak mümkündür.
+MATLAB ile temel matematik fonksiyonlarýnýn iki ve üç boyutlu grafikleri çizilebilir. Polinomlar, parboller, sinüs dalgalarý baþta olmak üzere her tür iki ve üç boyutlu matematiksel grafik MATLAB ile elde edilebilir[1].
+\subsection{VISUAL STUDIO}
+\qquad Microsoft Visual Studio, Microsoft tarafýndan geliþtirilen bir tümleþik geliþtirme ortamýdýr (IDE). Microsoft Windows, Windows Mobile, Windows CE, .NET Framework, .NET Compact Framework ve Microsoft Silverlight tarafýndan desteklenen tüm platformlar için yönetilen kod ile birlikte yerel kod ve Windows Forms uygulamalarý, web siteleri, web uygulamalarý ve web servisleri ile birlikte konsol ve grafiksel kullanýcý arayüzü uygulamalarý geliþtirmek için kullanýlýr.
+
+\qquad Visual Studio IntelliSense'in yaný sýra "code refactoring" destekleyen bir kod editörü içerir. Entegre hata ayýklayýcý, hem kaynak-seviyesinde hem de makine-seviyesinde çalýþýr. Diðer yerleþik araçlar, GUI uygulamalarý, web tasarýmcýsý, sýnýf tasarýmcýsý ve veritabaný þema tasarýmcýsý yaratabilmek için bir form tasarýmcýsý içerir. Hemen hemen her iþlevsellik düzeyinde dahil olmak üzere, kaynak kontrol sistemleri için destek (Subversion ve Visual SourceSafe gibi) sunan eklentileri kabul eder.
+
+\qquad Visual Studio, deðiþik programlama dillerini destekler, bu da kod editörü ve hata ayýklayýcýsýnýn neredeyse tüm programlama dillerini desteklemesini saðlamaktadýr. Dahili diller C/C++ (Görsel yoluyla C++), VB.NET (Visual Basic .NET üzerinden), C\# (Visual C\# ile), ve F\# (Visual Studio 2010 itibarýyla) içermektedir[2].
+\subsection{POSTMAN}
+\qquad Postman, API testleri için kullanýlan  Back-End yazýlým geliþtirenler için üretilmiþ  Rest client uygulamasýdýr. 
+Bir API var diyelim bu API'nin  yeteneklerini ve çalýþma hýzýný görmek , durumunu test etmek , veri içerisinde gelen deðerleri sorugulamak için postmandan yararlanýlýr.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{3.png}
+\caption{ Postman Arayüz Ekraný}
+\end{figure}
+
+1. Authorization : Kimlik doðrulama iþlemi için  buradan ona uygun formatta deðerler girilir.
+
+2. Header : Request bilgileriyle birlikte gönderilecek header deðerleri girilir.
+
+3. Body : Aktif hale gelmesi için menüden "POST" seçilmesi gerekmektedir.  Ve post deðerleri karþý tarafa.4 farklý þekilde gönderilebilinilir.
+
+a) form-data  b) x-www-form-urlencoded  c) raw d) binary
+
+Raw'ý seçip ve Json formatýnda veriler set edilir.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{5.png}
+\caption{ Postman Veri Gönderme}
+\end{figure}
+
+4. Response Body : Body tabýnda dönen deðerler geliyor ve çýktýyý 3 farklý formatta veriyor.
+
+a) Pretty  b)Raw  c)Preview
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{6.png}
+\includegraphics[scale=0.6]{4.png}
+\includegraphics[scale=0.6]{7.png}
+\caption{ Postman Dönen Veriler}
+\end{figure}
+\section{ASP.NET WEB API NEDÝR?}
+
+\qquad Web Api'ye geçmeden önce Api nedir ondan bahsedeyim. Api açýlýmý "Application Programming Interface" olan Türkçe'de uygulama geliþtirme arayüzü anlamýna gelir ve sahip olduðumuz service veya verileri dýþ dünyaya açýp baþka uygulamalarýn-platformlarýn kullanýmýna sunmak için belli kurallar çerçevesinde tanýmlamalar yaptýðýmýz arayüz'dür.
+
+\qquad Asp .Net Web Api ise farklý türde sayýsýz client (browsers, mobile phones, tablets, pc, etc.) tarafýndan consume edilebilen HTTP protokolü üzerinden haberleþebilen servisler oluþturmak için kullanýlan bir framework þeklinde tanýmlayabiliriz. Asp .net MVC ile routing, controllers, action results, filter, model binders gibi ortak feature'lara sahip olduklarýndan bir takým benzerlikler göstermektedir ancak MVC Framework'ün bir parçasý deðildir. Asp .net Web Api Core Asp .Net'in bir parçasýdýr ve MVC veya diðer web application türleri ile birlikte kullanýlabilir. Ayný zamanda bütün bunlardan baðýmsýz stand-alone Web services application olarakta kullanýlabilir.
+ 
+\qquad Günümüz dünyasýnda teknolojinin geliþmesiyle birlikte firmalar artýk web tabanlý uygulamalar üzerinden müþterilerine tam olarak ulaþamaz hale geldiler. Ýnsanlar artýk günlük hayatlarýnýn nerdeyse \%50 sini akýllý telefonlar, tablet pc vs ile geçiriyorlar ve bu cihazlarda insanlarýn hayatlarýný kolaylaþtýracak olan milyonlarca uygulama mevcut. Bunlarýn yanýnda birde IOT ile birlikte gelecek 5 yýlda dünyada 30 milyara yakýn internete baðlanabilen cihazlar olacaðýndan bahsediliyor ve buda belki milyonlarca Api geliþtirmesi demek.
+
+\qquad Firmalar veya uygulama geliþtiriciler müþterilere daha kolay ve hýzlý bir þekilde ulaþmada kullanmak için servislerini ve sahip olduklarý verilerin bir kýsmýný browserlar ya da internete baðlanabilen bu akýllý cihazlar tarafýndan consume edilebilmeleri için Api'lar geliþtirmeleri gerekmektedir. Çünkü Api'lar yapýsý gereði bütün programlama dilleri tarafýndan ortak kabul görmüþ medya tiplerini (XML-JOSN..etc.) response olarak alýp gerekli parse iþlemlerinden sonra kolayca kullanabilir. 
+
+\qquad Web Api sahip olduðunuz veri ve servisleri birçok farklý cihazda kullanýma sunmak için expose edebilmenizi saðlayan þahane bir framework ve dahasý Web Api .Net Framework üzerinde RESTful servisler inþa etmenizi saðlayacak ideal bir open source platform. WCF Rest service'lerinin aksine Web Api HTTP protokolünün bütün özelliklerini kullanýr (URIs, request/response headers, caching, versioning, çeþitli content format'larý) WCF Rest Service'lerinde yapýldýðý gibi farklý cihazlar için extra config ayarlarý vs yapmamýza da gerek bulunmamaktadýr. Request'i yapýlýrken dönmesi gereken response'un XML mi yoksa JSON formatýnda mý olacaðýna client'ýn seçimine býrakýlmýþtýr.  Çünkü Web Api birden fazla medya formatýnda response dönebilmektedir.
+
+Baþlýca Web API Özellikleri
+\begin{itemize}
+\item Http Get, Post, Put ve Delete metodlarýyla çalýþabildiðinden CRUD iþlemelrini destekler,
+\item Response'larda HttpStatusCode ve Accept Header parametreleri bulunur,
+\item Response'lar kullanýcýnýn istediði türde MediaTypeFormatter tarafýndan formatlanabilir,
+\item  OData desteði bulunmaktadýr ve Query yazmasý oldukça kolaydýr,
+\item Bir uygulama içerisinde veya IIS üzerinde host edilebilir,
+\item MVC'nin bazý özelliklerini taþýr (routing, controllers, action results, filter, model binders)
+ 
+\end{itemize}
+
+\pagebreak
+Neden Web Api'ý Seçmeliyiz ?
+\begin{itemize}
+\item Bir web service'e ihtiyacýnýz varsa ve soap'a ihtiyacýnýz yoksa en iyi seçenek Web Api dir,
+\item Geliþtirme sürece WCF de olduðu kadar zahmetli ve sýkýntýlý deðildir,
+\item 	Http tabanlý olduðundan Rest-ful servisler geliþtirmek için en iyi seçenektir,
+\item Exception ve Cache mimarileri oldukça performanslý ve yönetilebilir dir,
+\item Open Source olduðundan sürekli olarak geliþtirilip yeni feature'lar eklenmektedir,
+\item Microsoft yetkilileri Web Api sunumlarýndan birinde þuna benzer bir þey söyledi "Biz daha iyisini yapana kadar en iyisi bu..!" bu demek oluyor ki tam destek[3].
+\end{itemize}
+
+\section{GÖRÜNTÜ ÝÞLEME NEDÝR?}
+\qquad Görüntü iþleme, bir görüntüyü dijital form haline getirmek ve bazý iþlemleri gerçekleþtirmek için geliþtirilmiþ bir görüntü elde etmek veya ondan bazý yararlý bilgiler çýkarmak için kullanýlan bir yöntemdir. Bu, video çerçevesi veya fotoðraf gibi bir girdinin görüntünün olduðu ve çýktý ile iliþkili görüntü veya karakteristik olabilen bir sinyal tutma türüdür. Genellikle Görüntü Ýþleme sistemi, görüntüleri önceden tanýmlanmýþ sinyal iþleme yöntemleri uygularken iki boyutlu sinyaller olarak iþler.
+\subsection{ÇALIÞMA MANTIÐI NEDÝR?}
+
+\qquad Görüntü iþleme temel olarak aþaðýdaki üç adýmý içerir.
+\begin{enumerate}
+\item Görüntünün optik tarayýcý  veya dijital fotoðraflarla alýnmasý.
+\item Veri sýkýþtýrma, görüntü iyileþtirmeye ve uydu fotoðraflarý gibi insan gözleri için olmayan lekelenme kalýplarýný içeren görüntüyü analiz etme ve kullanma.
+\item Çýktý, sonuçlarýn imge analizine dayanan görüntü veya rapor deðiþtirilebilen  son aþamasýdýr.
+\end{enumerate}
+\subsection{GÖRÜNTÜ ÝÞLEMENÝN AMACI NEDÝR?}
+
+\qquad Görüntü iþlemenin amacýný beþ  maddede özetleyebiliriz:
+\begin{enumerate}
+\item Görselleþtirme: görünmeyen nesneleri gözlemlemek için kullanýrýz.
+\item Görüntü Keskinleþtirme Ve Restorasyon: Görüntü netleþtirme ve daha iyi görüntü almak için kullanýrýz.
+\item  Görüntü Alýmý: Ýlgi çeken görüntüler için kullanýrýz.
+\item Desen Ölçümü: Görüntüdeki çeþitli nesneleri tespit etmek için kullanýrýz.
+\item Resim Tanýma: Görüntüdeki çeþitli nesneleri ayýrt etmek için kullanýrýz.
+\end{enumerate}
+\subsection{GÖRÜNTÜ ÝÞLEME TÜRLERÝ}
+
+\qquad Görüntü iþleme için kullanýlan iki yöntem  Analog Görüntü Ýþleme ve Dijital Görüntü Ýþleme yöntemidir. Baský ve fotoðraf gibi basýlý kopyalar için analog veya görsel görüntü iþleme teknikleri kullanýlabilir. Görüntü analistleri, bu görsel teknikleri kullanýrken yorumlamanýn çeþitli temellerini kullanýlýrlar. Görüntü iþleme sadece incelenmesi gereken alanla sýnýrlý deðil analist bilgisi üzerine de yapýlabilir. Görsel tekniklerle görüntü iþleme  alanýndaki bir diðer önemli araç da birlikteliktir. Bu yüzden analistler, kiþisel bilgi ve teminat verilerini bir arada görüntü iþleme iþlemine tabi tutarlar[4].
+
+\qquad Dijital Ýþleme teknikleri dijital görüntülerin bilgisayarlarla düzenlenmesine yardýmcý olur. Uydu platformundan görüntü algýlayýcýlarýna ait ham veriler eksiklik içerdiðinden bu kusurlarý aþmak ve bilginin özgünlüðünü elde etmek için, çeþitli iþlem ve aþamalardan geçmek zorundadýr. Her türlü verinin dijital tekniði kullanýrken geçmesi gereken üç genel aþama;
+\begin{enumerate}
+\item Ön Ýþleme
+\item Geliþtirme ve Görüntüleme
+\item Bilgi Çýkarýmý'dýr.
+\end{enumerate}
+	\subsection{GÖRÜNTÜ ÝÞLEME TEKNOLOJÝSÝNÝN KULLANILDIÐI ALANLAR}
+\begin{itemize}
+\item Ürün Sayma ve Hata Tespiti
+\item Uydu Görüntüleri Üzerinde Nüfus Yoðunluðu, Çevre Kirliliði Ve Benzeri Çevresel Þartlarýn Tespiti
+\item Kalite, Doðruluk ve Yüzey Analizi
+\item Askeri Endüstri (Denizaltý Sonic Dalga Taramalarý), Sualtý Görüntüleme
+\item Robot Kol Yönetimi
+\item Eksik, Hatalý Parça veya Üretim Kontrolü
+\item Robotik, Trafik, Astronomi, Radar, Gazete Ve Fotoðraf Endüstrisi Uygulamalarý
+\item Fizik, Sanat, Biyomedikal Alanlar
+\item Uzaktan Algýlama Uygulamalarý
+\item Uydu Görüntüleri Üzerinde Hava Gözlem ve Tahmin Uygulamalarý
+\end{itemize}
+\pagebreak
+\section{WEB API ÝLE GÖRÜNTÜ ÝÞLEME UYGULAMASI}
+\subsection{YÜZ TANIMA NEDÝR?}
+\qquad Bir yüz daðarcýðý içerisinde bir kiþinin yüzünü tespit edip o kiþiyi bulma iþlemine yüz tanýma denir. Yüz tanýma iþlemi öncelikle yüzün tespiti ve daha sonra tespit edilen bu yüzün veritabanýndaki yüz daðarcýðýyla çeþitli yöntemleri (PCA, LDA, EP, ICA vb.) kullanarak bulma iþlemidir.
+
+\qquad Matlab'da kiþi sayýsýný bulabilmek için öncelikle resimdeki yüzleri bulmak gerekmektedir. Bir resim içinde yüzün konumunu tespit etmek için Matlab'ýn içinde bulunan Viola-Jones algoritmasý kullanarak nesneleri algýlama iþlemi yapan Cascade nesne dedektörünü kullanýlýr. Cascade nesne dedektörü uygulanan resim içerisinde bulduðu yüzlerin resim üzerindeki x ve y eksenine göre koordinatlarýný vermektedir. Temel olarak dedektör yüz algýlamak üzere yapýlandýrýlmýþ, fakat diðer nesne türleri için yapýlandýrýlabilir.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{1.png}
+
+\caption{ Yüz Bulma Kodu}
+\end{figure}
+\pagebreak
+\qquad Bulunan yüzleri çerçeveye aldýktan sonra klasöre kaydedilir. Burada klasöre yüzleri yerleþtirmek için isim verilir. Verilen ismi counter adýnda bir sayaç oluþturarak sayýsal olarak tanýmlandý. For döngüsü içerinde tekrardan ksayisi adýnda sayaç oluþturarak kiþi sayýsý bulunur.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{2.png}
+
+\caption{Bulunan Yüzleri Klasöre Atma ve Kiþi Sayýsýný Bulma Kodu}
+\end{figure}
+
+\subsection{MATLAB'DA DLL OLUÞTURMA}
+\qquad Matlab'da dll oluþturmak için Command Window penceresine 'deploytool' yazýlýr. Daha sonra açýlan Compiler penceresinde Library Compiler seçilir.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{8.png}
+
+\caption{Compiler Penceresi}
+\end{figure}
+
+\qquad Dll'i Visual Studio'da çalýþtýrmak için .Net Assembly'i seçilir. Daha sonra  .m uzantýlý Matlab dosyasý eklenir. Package'ye týklayarak dll'in oluþturulacaðý klasör seçilerek iþlem tamamlanmýþ olur.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{9.png}
+
+\caption{Dll Oluþturma}
+\end{figure}
+\pagebreak
+\subsection{VISUAL STUDIO'DA FILE UPLOAD}
+
+ 
+\qquad Bu uygulamayý gerçekleþtirmek için ilk olarak dosyadan resim belirlemek gerekir. Öncelikle projede HomeController içine Index adýnda bir action oluþturulur. Index'e sað týklayýp View oluþturularak projenin dosya yükleme iþlemi gerçekleþtirilir. Bu iþlem için metodunu post, enctype'ý multipart/form-data olarak tanýmlanýr.
+
+\qquad Div oluþturduktan sonra içerisine bir adet input > file ve bir adet button > submit kontrolleri yerleþtirilir. Ýnput > file kontrolünün name özelliði Image olarak ayarlandý. Bu taným controller içerisinde kullanýlýr.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{11.png}
+
+\caption{Index Sayfasý Kodlarý}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{10.png}
+
+\caption{Index Sayfasý }
+\end{figure}
+\pagebreak
+\subsection{VISUAL STUDIO'DA MATLAB FONKSÝYONLARINI ÇALIÞTIRMA}
+\qquad HomeController'da yazýlan dll'li çaðýrýlýr. Resmi belirledikten sonra yükle butonuna týklayarak oluþturulan dll'e gönderilir.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{12.png}
+
+\caption{Dll'den Resimdeki Kiþi Sayýsýný Çekme }
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{13.png}
+
+\caption{Index Sayfasýnýn Son Hali }
+\end{figure}
+\pagebreak
+\subsection{POSTMAN'DE WEB API TESTÝ}
+\qquad Web Api'de ilk yapýlmasý gereken oluþturulacak Controller'ý Web Api2 formatýnda seçmektir. Daha sonra burada  class oluþturularak sunucuda depolanacak resmin yolu saklanýr.
+Matlab dll'line gönderilecek resmin yolu yazýlýr ve sonucu döndürülür.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{15.png}
+
+\caption{Web Api Kodlarý }
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{14.png}
+
+\caption{Postman'de Test }
+\end{figure}
